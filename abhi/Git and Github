@@ -1,0 +1,43 @@
+Git and Github
+install git
+check version = git --version
+get the username and email from the github account
+provide gitusername = git config --global user.name "abhijeettamang"
+Provide gitemail = git config --global user.email "tamangabhijeet321@gmail.com
+To check git username and email = git config --list
+Where this file is located we can use = pwd
+then ls -al
+which will show  all the file 
+we are searching .gitconfig for that  we need to open it and the command is
+gedit .gitconfig
+now want to clone the repository from github to the ubuntu system then 
+create one directory lets as git_workspace for that the command is
+mkdir git_workspace
+then cd git_workspace
+now clone the repository from github to git_workspace
+for that go to github select the project created in the github then
+copy the url of the project from clone or download green button then copy to the terminal
+and the command is  = git  clone paste(url)
+it will  clone the project from github account to get_workspace repository
+then press ls
+it will show you the project of the github account to the git_workspace
+then cd projectname it will show you all the file in the project
+if we want to write a new program and commit to github account then command is
+touch hellword.py
+ls
+helloword.py is created in the project
+in order to open it =  gedit helloworld.py
+it will open up the editor where we can write some code in the editor
+lets see the status of the repository = git status
+first it will show some hint to add file by write git add file name
+the command is = git add helloword.py
+it in insure that the file is successfully save to the repository
+now the file is part of the git
+then commit it by  = git commit -m "first java program in git" helloworld.py
+-m define that we can comment during commit the file
+now it will show that the file is save to the gitaccount
+but for now it will not show any file added to the gitaccount for that we need to write some command
+the command is = git push -u origin master
+it will ask for the github username and github password
+now it successfully show the updated file in the github account
+
